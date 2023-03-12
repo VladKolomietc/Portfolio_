@@ -9,7 +9,6 @@
 
 /*font-family: 'Crimson Text', serif;
 font-family: 'Work Sans', sans-serif;*/
-
 .up {
     position: absolute;
     background: #74C69D;
@@ -77,6 +76,7 @@ h1:nth-child(3) {
 .text {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-left: 558px;
     gap: 16px;
     position: absolute;
@@ -126,3 +126,64 @@ h1:nth-child(3) {
 .footer img:nth-child(7) {
     width: 24px;
 }
+.footer p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    margin-left: 589px;
+    color: white;
+}
+/*Button*/
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.Load {
+    background: #212529;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    width: 170px;
+    height: 48px;
+    margin-bottom: 100px;
+    margin-top: 64px;
+}
+.Load:hover {
+    background: #000;
+}
+.Load:active {
+    background: #292929;
+    transition-delay: 0s;
+}
+/*Img size*/
+.cards img:nth-child(1) {
+    width: 570px;
+    height: 335px;
+}
+.cards img:nth-child(2) {
+    width: 555px;
+    height: 335px;
+}
+/*375*/
+@media screen and (max-width: 376px) {
+    .cards {
+        display: grid;
+        width: 1187px;
+        height: 1567px;
+        grid-gap: 55px;
+        grid-template-columns: 570px;
+        grid-template-rows: 365px 365px 365px 365px 365px 365px 365px 365px;
+        margin: 449px auto 0 auto;
+        
+    }
+    .logo {
+        margin-left: 20px ;
+    }
+    .up h1 {
+        margin-left: 105px;
+    }
+  }
